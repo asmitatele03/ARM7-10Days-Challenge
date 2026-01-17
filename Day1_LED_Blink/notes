@@ -1,0 +1,21 @@
+⭐ Description
+
+This program performs a sequential LED blinking operation on the LPC2129 microcontroller.
+LEDs are connected to Port 0 (P0.0–P0.7), and each LED turns ON and OFF one after another with a delay.
+
+⭐ Notes on the Code
+
+#define LED 0xFF selects the lower 8 bits of Port 0 for LED control.
+
+IODIR0 |= LED; configures P0.0 to P0.7 as output pins.
+
+LEDs are active-low, meaning they turn ON when the pin is cleared (IOCLR0).
+
+IOSET0 is used to turn the LED OFF.
+
+A for loop cycles through 8 LEDs, shifting the ON/OFF action across each pin.
+
+delay_ms(200) is a user-defined delay function (from header.h) to slow down the visible blinking.
+
+Demonstrates basic GPIO programming, bitwise operations, and hardware-level control in ARM7.
+
