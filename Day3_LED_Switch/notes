@@ -1,1 +1,19 @@
+Demonstrates two-way switch behavior using the LPC2129 ARM7 microcontroller
 
+The system continuously monitors the state of two input switches connected to P1.14 and P1.15
+
+When any one of the switches is pressed, the microcontroller detects the HIGH logic level
+
+Based on the input condition, the LED connected to P0.17 turns ON
+
+When both switches are released, the LED automatically turns OFF
+
+GPIO pins are configured using IODIR registers for proper input and output operation
+
+Switch status is read in real time using the IOPIN1 register
+
+Bitwise operations are used to isolate and evaluate individual pin states
+
+Illustrates real-time digital input processing in an embedded system
+
+Helps understand the basic working behavior of GPIO control on ARM7
