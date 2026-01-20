@@ -78,6 +78,5 @@ Device driver basics
 Interrupt replacement (simple polling)
 
 Summary--
-
 This program helps beginners understand GPIO handling, bit manipulation, and low-level register programming on the LPC2129 microcontroller.
 It forms the foundation for embedded systems, drivers, and real-time control.
