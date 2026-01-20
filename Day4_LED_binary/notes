@@ -10,13 +10,10 @@ IODIR0 (I/O Direction Register)
 Controls direction of PORT0 pins
 
 1 → Output
-
 0 → Input
 
 IODIR0 = 1 << 1 sets P0.1 as output.
-
 IOPIN0 (I/O Pin Register)
-
 Reads the current logic level of PORT0 pins
 
 IOPIN0 >> 5 shifts bit 5 to bit 0
