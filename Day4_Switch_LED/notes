@@ -1,7 +1,6 @@
-
 GPIO Input & Output in Embedded C (LPC2129)
-Introduction--
 
+Introduction--
 This program demonstrates how to read a digital input pin and control an output pin using Embedded C on the LPC2129 (ARM7) microcontroller.
 It uses basic bit manipulation, GPIO registers, and polling.
 Register Explanation
