@@ -1,6 +1,86 @@
 
 GPIO Input & Output in Embedded C (LPC2129)
-1. Introduction
+Introduction--
 
 This program demonstrates how to read a digital input pin and control an output pin using Embedded C on the LPC2129 (ARM7) microcontroller.
 It uses basic bit manipulation, GPIO registers, and polling.
+Register Explanation
+IODIR0 (I/O Direction Register)
+
+Controls direction of PORT0 pins
+
+1 → Output
+
+0 → Input
+
+IODIR0 = 1 << 1 sets P0.1 as output.
+
+IOPIN0 (I/O Pin Register)
+
+Reads the current logic level of PORT0 pins
+
+IOPIN0 >> 5 shifts bit 5 to bit 0
+
+& 1 masks other bits
+
+Used to check if switch on P0.5 is pressed.
+
+IOSET0 (I/O Set Register)
+
+Writing 1 to a bit sets that pin to HIGH
+
+IOSET0 = 1 << 1 → Sets P0.1 HIGH.
+
+IOCLR0 (I/O Clear Register)
+
+Writing 1 to a bit clears that pin to LOW
+
+IOCLR0 = 1 << 1 → Clears P0.1 LOW.
+
+Working of the Program
+Step-by-step:--
+
+P0.1 is set as output (LED or any device connected).
+
+P0.5 is read continuously inside an infinite loop.
+
+If P0.5 = 0 (switch pressed → active low):
+
+Clear P0.1 → LED turns ON.
+
+If P0.5 = 1 (switch not pressed):
+
+Set P0.1 → LED turns OFF.
+
+Concepts Used--
+
+Bit shifting (>>)
+
+Bit masking (&)
+
+Setting outputs using IOSET0
+
+Clearing outputs using IOCLR0
+
+Polling technique (continuous checking)
+
+Active low logic
+
+Applications--
+
+This logic is used in:
+
+Switch-based control
+
+LED indicators
+
+Input-driven actions
+
+Device driver basics
+
+Interrupt replacement (simple polling)
+
+Summary--
+
+This program helps beginners understand GPIO handling, bit manipulation, and low-level register programming on the LPC2129 microcontroller.
+It forms the foundation for embedded systems, drivers, and real-time control.
