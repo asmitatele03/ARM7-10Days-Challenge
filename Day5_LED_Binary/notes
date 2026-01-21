@@ -1,1 +1,28 @@
+8-bit LED Driver using LPC2148 GPIO | Embedded C
 
+Today, I implemented an 8-bit LED driver using the LPC2148 microcontroller.
+This challenge helped me understand how to control GPIO pins at the register level and interact with external switches.
+
+🔧 What This Program Does
+
+✔ Reads the state of a switch
+✔ Toggles LEDs using an 8-bit pattern
+✔ Uses register-level programming (IODIR0, IOSET0, IOCLR0)
+✔ Implements a counter that resets after 8 cycles
+✔ Demonstrates basic embedded C workflow for ARM7 (LPC2148)
+
+🧠 Key Concepts Learned
+
+ARM7TDMI GPIO architecture
+
+Bit masking and shifting
+
+Switch debouncing technique (while loop hold)
+
+LED pattern generation
+
+Delay and timing understanding
+
+Register-level peripheral access
+
+Simple driver-like behavior (input → processing → output)
