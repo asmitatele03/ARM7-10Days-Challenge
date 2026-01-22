@@ -1,9 +1,3 @@
-Got it Asmita — you want **simple, clean, descriptive notes**, not tables or long formatting.
-Here are **straight, descriptive notes** you can directly put on GitHub.
-
----
-
-# 📘 **Notes for 8-Bit LCD Driver (ARM – Day 6)**
 
 This program demonstrates how to interface a standard 16x2 LCD in **8-bit mode** using the LPC21xx microcontroller. The LCD is controlled using three main functions: one for sending commands, one for sending data (characters), and one for initializing the LCD. Delay functions are used to provide the required timing for the LCD operations.
 
