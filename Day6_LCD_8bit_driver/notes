@@ -11,7 +11,7 @@ and configuring display modes. It works by loading the command onto the port, cl
 
 The **lcd_data()** function sends character data to the LCD. The process is similar to lcd_cmd(), but RS is set high to indicate data mode. 
 This allows characters like ‘A’, ‘B’, etc., to be displayed on the LCD.
-
+    
 The **lcd_init()** function sets up the LCD when the program starts. It configures the display to work in **8-bit mode**, 
 turns on the cursor, and clears the display. It also sends the necessary initialization commands defined in the LCD datasheet.
 
