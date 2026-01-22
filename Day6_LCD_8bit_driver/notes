@@ -1,1 +1,27 @@
+Got it Asmita — you want **simple, clean, descriptive notes**, not tables or long formatting.
+Here are **straight, descriptive notes** you can directly put on GitHub.
+
+---
+
+# 📘 **Notes for 8-Bit LCD Driver (ARM – Day 6)**
+
+This program demonstrates how to interface a standard 16x2 LCD in **8-bit mode** using the LPC21xx microcontroller. The LCD is controlled using three main functions: one for sending commands, one for sending data (characters), and one for initializing the LCD. Delay functions are used to provide the required timing for the LCD operations.
+
+The data lines of the LCD are connected to **P0.0 to P0.7**, while the control pins RS, RW, and EN are connected to **P0.8, P0.9, and P0.10**. All these pins are configured as output pins.
+
+The **lcd_cmd()** function is responsible for sending commands to the LCD, such as clearing the display, setting cursor position, enabling display, and configuring display modes. It works by loading the command onto the port, clearing RS and RW pins, and pulsing the EN pin to latch the command.
+
+The **lcd_data()** function sends character data to the LCD. The process is similar to lcd_cmd(), but RS is set high to indicate data mode. This allows characters like ‘A’, ‘B’, etc., to be displayed on the LCD.
+
+The **lcd_init()** function sets up the LCD when the program starts. It configures the display to work in **8-bit mode**, turns on the cursor, and clears the display. It also sends the necessary initialization commands defined in the LCD datasheet.
+
+The delay functions **delay_ms()** and **delay_sec()** use Timer0 of the LPC21xx. They configure the timer prescaler and wait for the counter to reach the desired value. These delays are important to ensure the LCD receives stable and accurate timing while sending commands or data.
+
+In the main program, the LCD is first initialized, and then characters are continuously displayed. The cursor position is set using lcd_cmd(0x80), and characters 'A' and 'B' are written with a delay in between to observe the output clearly.
+
+These files together form a basic 8-bit LCD driver that demonstrates GPIO handling, timing control, and LCD command structure on ARM LPC21xx microcontrollers. This foundation is essential for further embedded driver development.
+
+---
+
+If you want, I can also create a **clean README.md** version for your GitHub.
 
