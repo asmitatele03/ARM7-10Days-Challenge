@@ -1,4 +1,4 @@
-Delay functions
+*Delay functions
 
 #include <LPC21xx.h>
 #include "header.h"
