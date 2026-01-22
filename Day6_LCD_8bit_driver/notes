@@ -1,7 +1,7 @@
       
 This program demonstrates how to interface a standard 16x2 LCD in **8-bit mode** using the LPC21xx microcontroller.
 The LCD is controlled using three main functions: one for sending commands, one for sending data (characters), and one for initializing the LCD.
-Delay functions are used to provide the required timing for the LCD operations.
+Delay functions are used to provide the required timing for the LCD operations.   
 
 The data lines of the LCD are connected to **P0.0 to P0.7**, while the control pins RS, RW, and EN are connected to **P0.8, P0.9, and P0.10**. 
 All these pins are configured as output pins.
