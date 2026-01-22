@@ -31,7 +31,7 @@ void delay_ms(unsigned int ms)
 extern void delay_sec(unsigned int sec);
 extern void delay_ms(unsigned int ms);
 
-lcd_8bit_driver.c
+*lcd_8bit_driver.c
 #include <LPC21xx.h>
 #include "header.h"
 
