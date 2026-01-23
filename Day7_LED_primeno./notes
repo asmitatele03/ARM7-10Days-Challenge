@@ -11,7 +11,7 @@ If the number is prime, the program will:
 This creates a visual representation of prime numbers using LEDs.
 
 Example:
-If the number **2** is prime → LED at bit position 2 glows
+If the number 2 is prime → LED at bit position 2 glows
 If the number **3** is prime → LED at bit position 3 glows
 If the number **4** is not prime → no LED glows and so on.
 
