@@ -40,7 +40,7 @@ GPIO is set so that these pins act as **output pins**.
 
 Each LED corresponds to a bit on the microcontroller port.
 
-⚙️ Step-by-Step Operation**
+⚙️ Step-by-Step Operation
 
 1. Configure the lower 8 pins of PORT0 as output.
 2. Set all LEDs OFF initially.
@@ -52,7 +52,7 @@ Each LED corresponds to a bit on the microcontroller port.
    * If not → Do nothing
 5. Move to the next number and repeat endlessly.
 
-This makes the LEDs blink **only** for prime numbers, creating a visual pattern of prime-number distribution.
+This makes the LEDs blink only for prime numbers, creating a visual pattern of prime-number distribution.
 
 🎯 Purpose of This Program
 
