@@ -1,7 +1,7 @@
 📘 What This Program Does
 
 The microcontroller starts counting numbers from 1 onwards.
-For each number, it checks if the number is **prime**.
+For each number, it checks if the number is prime.
 If the number is prime, the program will:
 
 * Turn ON the LED corresponding to that prime number
