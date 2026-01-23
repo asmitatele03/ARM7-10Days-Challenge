@@ -1,1 +1,92 @@
+Here is a **fully descriptive note** (simple, clear, and professional) that you can directly upload on GitHub.
+This version focuses **only on the prime-LED glowing concept**, exactly as you asked.
+
+---
+
+# **Prime Number LED Glowing – LPC2148 (ARM7)**
+
+This program runs on the **LPC2148 ARM7 microcontroller** and is designed to **identify prime numbers** and glow LEDs connected to PORT0 whenever a prime number is detected.
+It is a simple demonstration of combining **basic number theory (prime checking)** with **embedded GPIO control**.
+
+---
+
+## **📘 What This Program Does**
+
+The microcontroller starts counting numbers from **1 onwards**.
+For each number, it checks if the number is **prime**.
+If the number is prime, the program will:
+
+* Turn ON the LED corresponding to that prime number
+* Keep it glowing for a short duration
+* Turn it OFF again
+
+This creates a visual representation of prime numbers using LEDs.
+
+Example:
+If the number **2** is prime → LED at bit position 2 glows
+If the number **3** is prime → LED at bit position 3 glows
+If the number **4** is not prime → no LED glows
+… and so on.
+
+---
+
+## **📌 How Prime Number Detection Works**
+
+A number is prime if it has exactly **two divisors**:
+
+1. 1
+2. The number itself
+
+The program checks this using a simple loop:
+
+* It divides the number by every value from `1` to `i`
+* Counts how many times the division remainder becomes zero
+* If the count equals **2**, the number is prime
+
+This divisor-counting method is straightforward and works well for demonstration.
+
+---
+
+## **💡 How LEDs Are Controlled**
+
+The LEDs are connected to **PORT0** (P0.0 to P0.7).
+GPIO is set so that these pins act as **output pins**.
+
+* `IOCLR0 = 1 << i;` → Turns ON the LED at position `i`
+* `IOSET0 = 1 << i;` → Turns OFF the LED at position `i`
+
+Each LED corresponds to a bit on the microcontroller port.
+
+---
+
+## **⚙️ Step-by-Step Operation**
+
+1. Configure the lower 8 pins of PORT0 as output.
+2. Set all LEDs OFF initially.
+3. Start checking numbers from 1, 2, 3, 4 … etc.
+4. For each number:
+
+   * Check if it is prime
+   * If prime → Glow the LED briefly
+   * If not → Do nothing
+5. Move to the next number and repeat endlessly.
+
+This makes the LEDs blink **only** for prime numbers, creating a visual pattern of prime-number distribution.
+
+---
+
+## **🎯 Purpose of This Program**
+
+This task helps in understanding:
+
+* How GPIO registers work on ARM7
+* How to use bitwise operations for LED control
+* How to implement a simple mathematical algorithm in embedded C
+* How hardware and logic combine in real-time applications
+
+It is an excellent exercise for practicing **ARM programming**, **logic building**, and **embedded system fundamentals**.
+
+---
+
+If you want, I can also prepare a **README.md**, **GitHub description**, or your **LinkedIn post** for Day 7 of your ARM Challenge!
 
