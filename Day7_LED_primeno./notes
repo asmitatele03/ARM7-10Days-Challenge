@@ -33,7 +33,7 @@ This divisor-counting method is straightforward and works well for demonstration
 💡 How LEDs Are Controlled
 
 The LEDs are connected to **PORT0** (P0.0 to P0.7).
-GPIO is set so that these pins act as **output pins**.
+GPIO is set so that these pins act as output pins.
 
 * `IOCLR0 = 1 << i;` → Turns ON the LED at position `i`
 * `IOSET0 = 1 << i;` → Turns OFF the LED at position `i`
