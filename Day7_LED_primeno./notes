@@ -13,10 +13,7 @@ This creates a visual representation of prime numbers using LEDs.
 Example:
 If the number **2** is prime → LED at bit position 2 glows
 If the number **3** is prime → LED at bit position 3 glows
-If the number **4** is not prime → no LED glows
-… and so on.
-
----
+If the number **4** is not prime → no LED glows and so on.
 
 📌 How Prime Number Detection Works
 
@@ -57,9 +54,7 @@ Each LED corresponds to a bit on the microcontroller port.
 
 This makes the LEDs blink **only** for prime numbers, creating a visual pattern of prime-number distribution.
 
----
-
-## **🎯 Purpose of This Program**
+🎯 Purpose of This Program
 
 This task helps in understanding:
 
@@ -68,9 +63,5 @@ This task helps in understanding:
 * How to implement a simple mathematical algorithm in embedded C
 * How hardware and logic combine in real-time applications
 
-It is an excellent exercise for practicing **ARM programming**, **logic building**, and **embedded system fundamentals**.
 
----
-
-If you want, I can also prepare a **README.md**, **GitHub description**, or your **LinkedIn post** for Day 7 of your ARM Challenge!
 
