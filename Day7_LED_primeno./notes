@@ -1,18 +1,6 @@
-Here is a **fully descriptive note** (simple, clear, and professional) that you can directly upload on GitHub.
-This version focuses **only on the prime-LED glowing concept**, exactly as you asked.
+📘 What This Program Does
 
----
-
-# **Prime Number LED Glowing – LPC2148 (ARM7)**
-
-This program runs on the **LPC2148 ARM7 microcontroller** and is designed to **identify prime numbers** and glow LEDs connected to PORT0 whenever a prime number is detected.
-It is a simple demonstration of combining **basic number theory (prime checking)** with **embedded GPIO control**.
-
----
-
-## **📘 What This Program Does**
-
-The microcontroller starts counting numbers from **1 onwards**.
+The microcontroller starts counting numbers from 1 onwards.
 For each number, it checks if the number is **prime**.
 If the number is prime, the program will:
 
@@ -30,9 +18,9 @@ If the number **4** is not prime → no LED glows
 
 ---
 
-## **📌 How Prime Number Detection Works**
+📌 How Prime Number Detection Works
 
-A number is prime if it has exactly **two divisors**:
+A number is prime if it has exactly two divisors:
 
 1. 1
 2. The number itself
@@ -45,9 +33,7 @@ The program checks this using a simple loop:
 
 This divisor-counting method is straightforward and works well for demonstration.
 
----
-
-## **💡 How LEDs Are Controlled**
+💡 How LEDs Are Controlled
 
 The LEDs are connected to **PORT0** (P0.0 to P0.7).
 GPIO is set so that these pins act as **output pins**.
@@ -57,9 +43,7 @@ GPIO is set so that these pins act as **output pins**.
 
 Each LED corresponds to a bit on the microcontroller port.
 
----
-
-## **⚙️ Step-by-Step Operation**
+⚙️ Step-by-Step Operation**
 
 1. Configure the lower 8 pins of PORT0 as output.
 2. Set all LEDs OFF initially.
