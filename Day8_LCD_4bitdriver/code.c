@@ -1,9 +1,7 @@
 #include <lpc21xx.h>
-#include "lcd.h"
+#include "header.h"
 
-void delay_ms(unsigned int ms);
-
-int main(void)
+int main()
 {
     lcd_init();              // Initialize LCD
 
