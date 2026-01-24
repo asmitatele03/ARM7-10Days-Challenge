@@ -3,27 +3,23 @@ Project Overview
 In this task, the LCD is driven using a 4-bit communication protocol, where only the higher 4 data lines (D4–D7) are used. 
 Commands and data are sent in two nibbles, which conserves GPIO pins and is widely used in embedded systems.
 
-## 🧠 **Concepts Used**
+Concepts Used
 
-### ✔ 4-bit LCD Interfacing
+✔ 4-bit LCD Interfacing
 
 Only 4 data lines (D4–D7) are used, reducing pin requirements.
 Commands like cursor movement and clear display (`0x01`) are used.
 
-### ✔ DDRAM Addressing
+✔ DDRAM Addressing
 
-* First row addresses range from **0x80 to 0x8F**
+* First row addresses range from 0x80 to 0x8F
 * Updating this address moves the cursor position
 
-### ✔ Simple Delay-Based Animation
+✔ Simple Delay-Based Animation
 
 A `delay_ms(500)` creates the visible motion effect for each shift.
 
----
-
-## 🧾 **Code Used**
-
-```c
+Code Used
 for(i = 0; i < 16; i++)
 {
     lcd_cmd(0x80 + i);   // Move cursor to next position
@@ -31,11 +27,8 @@ for(i = 0; i < 16; i++)
     delay_ms(500);       // Delay for visual animation
     lcd_cmd(0x01);       // Clear the LCD before next position
 }
-```
 
----
-
-## 📝 **Explanation**
+Explanation
 
 1. **`lcd_cmd(0x80 + i);`**
 
