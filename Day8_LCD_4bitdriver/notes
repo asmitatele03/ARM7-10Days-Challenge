@@ -5,10 +5,10 @@ Commands and data are sent in two nibbles, which conserves GPIO pins and is wide
 
 Concepts Used
 
-✔ 4-bit LCD Interfacing
+✔ 4-bit LCD Interfacing 
 
 Only 4 data lines (D4–D7) are used, reducing pin requirements.
-Commands like cursor movement and clear display (`0x01`) are used.
+Commands like cursor movement and clear display (0x01) are used.
 
 ✔ DDRAM Addressing
 
@@ -33,7 +33,7 @@ Explanation
 1. 'lcd_cmd(0x80 + i);'
 
    * 0x80 is the base command for the first row's DDRAM address.
-   * Adding `i` shifts the cursor position from column 0 to column 15.
+   * Adding 'i' shifts the cursor position from column 0 to column 15.
 
 2. lcd_data('A');
 
