@@ -17,7 +17,7 @@ Commands like cursor movement and clear display (`0x01`) are used.
 
 ✔ Simple Delay-Based Animation
 
-A `delay_ms(500)` creates the visible motion effect for each shift.
+A 'delay_ms(500)' creates the visible motion effect for each shift.
 
 Code Used
 for(i = 0; i < 16; i++)
@@ -43,16 +43,14 @@ Explanation
 
    * Slows down the movement so the shift is visible to the user.
 
-4. **`lcd_cmd(0x01);`**
+4. lcd_cmd(0x01);
 
    * Clears the screen before writing the character in the next location.
    * This creates a smooth “moving” single-character animation.
 
----
+Outcome
 
-## 🎯 **Outcome**
-
-By the end of Day 8, the LCD successfully displays a **moving ‘A’ animation** across the first row.
+By the end of Day 8, the LCD successfully displays a "moving ‘A’ animation" across the first row.
 This exercise strengthens understanding of:
 
 * LCD command structure
@@ -61,22 +59,5 @@ This exercise strengthens understanding of:
 * Register-level control in ARM microcontrollers
 * Timing and delays in embedded systems
 
----
 
-## 🚀 **Future Improvements**
-
-* Implement scrolling text
-* Create custom characters using CGRAM
-* Move characters on both rows
-* Display full strings with animation
-* Build a reusable LCD driver library
-
----
-
-If you want, I can also generate:
-📄 **README.md file**
-📂 **Proper GitHub folder structure**
-📝 **Flowchart or block diagram**
-
-Just tell me!
 
