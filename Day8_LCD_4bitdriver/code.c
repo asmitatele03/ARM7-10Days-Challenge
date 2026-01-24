@@ -3,7 +3,7 @@
 
 int main()
 {
-    lcd_init();              // Initialize LCD
+    lcd_init();              // Initialize LCD  
 
     int i;
     while(1)
