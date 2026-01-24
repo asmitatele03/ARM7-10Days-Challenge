@@ -1,23 +1,7 @@
-Here are **clean, descriptive, GitHub-ready notes** for your ARM Day-8 LCD project (4-bit LCD driver, shifting ‘A’ across the screen).
+Project Overview
 
-You can **copy-paste directly into your README.md**.
-
----
-
-# 📘 **ARM Challenge – Day 8: 4-Bit LCD Driver | Moving Character Display**
-
-This project demonstrates how to interface a **16x2 LCD in 4-bit mode** using the **ARM7TDMI-based LPC2129 microcontroller**.
-The objective of Day 8 was to display the character **‘A’** and move it across the LCD from left to right by continuously updating the DDRAM address.
-
----
-
-## ✅ **Project Overview**
-
-In this task, the LCD is driven using a **4-bit communication protocol**, where only the higher 4 data lines (D4–D7) are used. Commands and data are sent in two nibbles, which conserves GPIO pins and is widely used in embedded systems.
-
-To create a motion effect, we shift the location of the character ‘A’ by modifying the DDRAM address inside a loop.
-
----
+In this task, the LCD is driven using a 4-bit communication protocol, where only the higher 4 data lines (D4–D7) are used. 
+Commands and data are sent in two nibbles, which conserves GPIO pins and is widely used in embedded systems.
 
 ## 🧠 **Concepts Used**
 
