@@ -30,16 +30,16 @@ for(i = 0; i < 16; i++)
 
 Explanation
 
-1. **`lcd_cmd(0x80 + i);`**
+1. 'lcd_cmd(0x80 + i);'
 
    * 0x80 is the base command for the first row's DDRAM address.
    * Adding `i` shifts the cursor position from column 0 to column 15.
 
-2. **`lcd_data('A');`**
+2. lcd_data('A');
 
    * Writes the character ‘A’ at the current position.
 
-3. **`delay_ms(500);`**
+3. delay_ms(500);
 
    * Slows down the movement so the shift is visible to the user.
 
