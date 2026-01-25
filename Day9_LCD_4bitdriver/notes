@@ -56,9 +56,6 @@ lcd_data('A') prints the letter at the new position.
 
 This results in 'A' moving smoothly from column 0 to column 15.
 
-
----
-
 5. Moving Character ‘Z’ on Row 2
 
 To make 'Z' move right → left, the cursor is positioned using:
