@@ -1,3 +1,5 @@
+#include<lpc21xx.h>
+#include"header.h"
 main()
 {
     int i;
