@@ -5,7 +5,7 @@ main()
     int i;
     lcd_init();
     while(1)
-    {
+        {
         for(i = 0; i < 16; i++)
         {
             lcd_cmd(0x80 + i);   // First row, moving forward
