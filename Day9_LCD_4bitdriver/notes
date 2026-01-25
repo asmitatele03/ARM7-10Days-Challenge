@@ -38,9 +38,6 @@ for(i = 0; i < 16; i++)
 
 Since a 16×2 LCD has 16 characters per row, this loop covers every possible position.
 
-
----
-
 4. Moving Character ‘A’ on Row 1
 
 To display 'A' moving from left → right, the cursor is positioned using:
