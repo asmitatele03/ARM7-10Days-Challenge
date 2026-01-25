@@ -91,24 +91,3 @@ Clearing the LCD ensures that only the current frame is visible and removes any 
 ✨ Both characters move simultaneously, creating a mirrored scrolling animation.
 ✨ The screen clears between frames, ensuring a neat and clean movement.
 
-This demonstration is perfect for understanding:
-
-DDRAM addressing in LCDs
-
-Cursor positioning
-
-4-bit data transfer
-
-Display refresh techniques
-
-Simple animation logic in embedded systems
-
-
-
----
-
-If you want, I can also create: ✅ A proper README.md format
-✅ A GitHub description
-✅ A block diagram
-✅ A flowchart
-Just tell me!
