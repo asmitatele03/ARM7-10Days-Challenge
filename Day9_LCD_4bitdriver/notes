@@ -71,10 +71,6 @@ Explanation:
 
 This creates a reverse-scrolling effect.
 
-
-
----
-
 6. Delay and Screen Refresh
 
 Each frame is paused for half a second:
