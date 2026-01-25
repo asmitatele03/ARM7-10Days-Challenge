@@ -53,7 +53,6 @@ Adding i shifts the cursor one position on each iteration.
 
 lcd_data('A') prints the letter at the new position.
 
-
 This results in 'A' moving smoothly from column 0 to column 15.
 
 5. Moving Character ‘Z’ on Row 2
@@ -84,9 +83,6 @@ After printing each animation frame, the display is cleared:
 lcd_cmd(0x01);
 
 Clearing the LCD ensures that only the current frame is visible and removes any previous characters left behind.
-
-
----
 
 🎥 Final Output Effect
 
