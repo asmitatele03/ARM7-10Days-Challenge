@@ -11,9 +11,6 @@ The character ‘Z’ moves from right to left on the second row.
 Both characters move simultaneously in opposite directions, creating a mirrored scrolling effect.
 This is a simple and effective demonstration of LCD addressing, cursor control, and timed display updates.
 
-
----
-
 🧩 Understanding the Code
 
 1. LCD Initialization
@@ -25,9 +22,6 @@ lcd_init();
 This function configures the LCD in 4-bit communication mode, sets up display settings, and prepares it to receive commands and data.
 Without proper initialization, the LCD will not respond to commands correctly.
 
-
----
-
 2. Infinite Animation Loop
 
 The animation runs inside:
@@ -35,9 +29,6 @@ The animation runs inside:
 while(1)
 
 This ensures that the scrolling effect continues endlessly until the system is powered off or reset.
-
-
----
 
 3. Main Animation Logic
 
