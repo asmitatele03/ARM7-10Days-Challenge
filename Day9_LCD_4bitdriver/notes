@@ -1,9 +1,3 @@
-Here is a fully descriptive, polished, GitHub-ready explanation for your LCD code.
-You can paste it directly into your repository README.
-
-
----
-
 📘 LCD 4-Bit Driver – Bidirectional Character Scrolling (A → Z Movement Demo)
 
 This project demonstrates how to control a 16×2 LCD in 4-bit mode using an embedded microcontroller.
