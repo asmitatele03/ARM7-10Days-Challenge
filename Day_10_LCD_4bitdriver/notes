@@ -63,11 +63,7 @@ Final Output on LCD:
 a
 b
 
-📌 Short Explanation to Write in Notes
-
-You can use this in your GitHub or theory notes:
-
-📘 LCD Forward Driver Explanation (16×2 LCD – LPC21xx)
+LCD Forward Driver Explanation (16×2 LCD – LPC21xx)
 
 This program demonstrates how to send commands and data to a 16×2 LCD using a forward driver approach. 
 The lcd_init() function configures the LCD mode, display settings, and clears the screen. 
