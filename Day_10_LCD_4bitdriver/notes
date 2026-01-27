@@ -1,1 +1,113 @@
+Here is the extracted code from your screenshot, cleaned and formatted:
 
+#include <lpc21xx.h>
+#include "header.h"
+
+main()
+{
+    lcd_init();
+    lcd_cmd(0x80);
+    lcd_data('a');
+    lcd_cmd(0xC0);
+    lcd_data('b');
+}
+
+
+---
+
+✅ Explanation of the Code
+
+This program is part of a forward driver approach for interfacing a 16×2 LCD (HD44780 controller) with an LPC21xx ARM7 microcontroller.
+
+✔ 1. lcd_init()
+
+This function initializes the LCD in either 4-bit or 8-bit mode (based on your driver). It performs:
+
+Function Set (8-bit or 4-bit mode)
+
+Display ON/OFF control
+
+Entry Mode
+
+Clear display
+
+Cursor return home
+
+
+Without initialization, the LCD cannot receive commands/data.
+
+
+---
+
+✔ 2. lcd_cmd(0x80) → Move Cursor to 1st Line, 1st Position
+
+Why 0x80?
+
+LCD has a DDRAM (Display Data RAM).
+Address of 1st line starting position = 0x80
+
+So:
+
+0x80 = Line 1, Position 1 (Address 00)
+
+Your code sends 'a' at this position.
+
+Output on LCD:
+
+a
+
+
+---
+
+✔ 3. lcd_data('a') → Print Character 'a'
+
+lcd_data() sends ASCII data to LCD.
+Here it prints the character 'a' at DDRAM address 00 (1st line start).
+
+
+---
+
+✔ 4. lcd_cmd(0xC0) → Move Cursor to 2nd Line, 1st Position
+
+Why 0xC0?
+
+LCD second line starts at address 0x40 inside DDRAM.
+
+Formula:
+
+Second line = 0x80 + 0x40 = 0xC0
+
+So:
+
+0xC0 = Line 2, Position 1 (Address 40)
+
+
+---
+
+✔ 5. lcd_data('b') → Print Character 'b'
+
+This prints 'b' at the start of the second line.
+
+Final Output on LCD:
+
+a
+b
+
+
+---
+
+📌 Short Explanation to Write in Notes
+
+You can use this in your GitHub or theory notes:
+
+
+---
+
+📘 LCD Forward Driver Explanation (16×2 LCD – LPC21xx)
+
+This program demonstrates how to send commands and data to a 16×2 LCD using a forward driver approach. The lcd_init() function configures the LCD mode, display settings, and clears the screen. The command 0x80 moves the cursor to the first line at DDRAM address 00, and 0xC0 moves the cursor to the second line at DDRAM address 40. After positioning the cursor, lcd_data() is used to print characters on the LCD. In this example, 'a' is printed on the first line and 'b' on the second line.
+
+
+---
+
+If you want, I can also prepare full hardware explanation, pin mapping, or working of each command for your GitHub documentation.
