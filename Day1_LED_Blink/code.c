@@ -1,6 +1,6 @@
 #include <lpc21xx.h>
-#define LED 0xFF
 #include "header.h"
+#define LED 0xFF
 
 int main()
 {
