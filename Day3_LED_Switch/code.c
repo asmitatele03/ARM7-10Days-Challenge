@@ -1,5 +1,5 @@
 // two way switch
-#include <LPC21xx.H>
+#include <LPC21xx.H>      
 
 int main() {
     IODIR0 = 1 << 17;       // Configure P0.17 as output (LED)
