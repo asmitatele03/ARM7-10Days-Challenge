@@ -2,7 +2,7 @@
 #include <LPC21xx.H>      
 
 int main() {
-    IODIR0 = 1 << 17;       // Configure P0.17 as output (LED)
+    IODIR0 = 1 << 17;        // Configure P0.17 as output (LED)
     IODIR1 = 0x00;          // Configure Port1 pins as input (Switches)
 
     while(1) {
