@@ -1,6 +1,6 @@
 ⭐ Description
 
-This program performs a sequential LED blinking operation on the LPC2129 microcontroller.
+This program performs a sequential LED blinking operation on the LPC2129 microcontroller.     
 LEDs are connected to Port 0 (P0.0–P0.7), and each LED turns ON and OFF one after another with a delay.
 
 ⭐ Notes on the Code
